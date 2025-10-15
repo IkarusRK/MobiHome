@@ -78,6 +78,11 @@ nav {
     transition: color 0.3s ease;
 }
 
+.carrinho {
+    width: 17px;
+
+}
+
 .icon-link:hover {
     color: #8b7355;
 }
@@ -238,6 +243,43 @@ nav {
     color: rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
+}
+
+/* Ajuste geral das imagens */
+.category-image img,
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.category-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.product-image .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    border-radius: 4px;
+    z-index: 2;
 }
 
 .badge {
@@ -461,6 +503,8 @@ footer {
     font-size: 0.9em;
 }
 
+
+
 @media (max-width: 1200px) {
     .categories {
         grid-template-columns: repeat(2, 1fr);
@@ -494,4 +538,7 @@ footer {
     .newsletter-form {
         flex-direction: column;
     }
+
+
+
 }
